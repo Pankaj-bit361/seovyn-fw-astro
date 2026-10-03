@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { SITE_TITLE, SITE_DESCRIPTION, BASE } from "../consts";
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 6);
+---
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <h1>{SITE_TITLE}</h1>
+  <p class="tagline">{SITE_DESCRIPTION}</p>
+  <p>Copper Kettle is a small coffee roaster in East Austin. We buy green coffee from farms in Colombia, Ethiopia and Guatemala and roast it in small batches every week.</p>
+  <p>Order whole beans or ground coffee for your brewer, or join the subscription and get a fresh bag every two or four weeks.</p>
+  <h2>From the blog</h2>
+  <ul class="posts">{posts.map((post) => <li><a href={`${BASE}/blog/${post.id}/`}>{post.data.title}</a></li>)}</ul>
+</BaseLayout>

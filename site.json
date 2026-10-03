@@ -1,0 +1,30 @@
+{
+  "name": "Copper Kettle Coffee Roasters",
+  "tagline": "Small-batch specialty coffee, roasted every Tuesday in Austin",
+  "home": [
+    "Copper Kettle is a small coffee roaster in East Austin. We buy green coffee from farms in Colombia, Ethiopia and Guatemala and roast it in small batches every week.",
+    "Order whole beans or ground coffee for your brewer, or join the subscription and get a fresh bag every two or four weeks."
+  ],
+  "about": [
+    "We started in 2020 with a five-kilo roaster in a garage. Every bag names the farm, the altitude and the process.",
+    "Our roasts are light to medium: we want you to taste where the coffee comes from, not the roast."
+  ],
+  "posts": [
+    {
+      "slug": "how-to-grind-coffee-for-a-french-press",
+      "title": "How to grind coffee for a French press",
+      "description": "The right grind for a French press without sludge or bitterness.",
+      "date": "2026-08-20",
+      "body": "A French press needs a coarse grind, about like sea salt. Grind finer and the coffee slips through the metal filter, leaving the cup muddy and bitter.\n\n## Ratio\n\nUse 60 grams of coffee per liter of water.\n\n## Time\n\nFour minutes. Break the crust at one minute, skim the foam, and press slowly.\n\n## Water\n\nJust off the boil, around 200°F."
+    },
+    {
+      "slug": "washed-vs-natural-coffee",
+      "title": "Washed vs natural coffee: what's the difference?",
+      "description": "How processing after the harvest changes what's in your cup.",
+      "date": "2026-09-10",
+      "body": "After harvest, coffee cherries are processed to get to the bean, and the process changes the flavor a lot.\n\n## Washed\n\nThe fruit is removed and the beans are fermented and washed. The cup is clean, with bright acidity.\n\n## Natural\n\nThe whole cherry dries in the sun for weeks. The bean takes on the fruit's sugars: sweeter, with berry notes and more body."
+    }
+  ],
+  "url": "https://pankaj-bit361.github.io/seovyn-fw-astro",
+  "base": "/seovyn-fw-astro"
+}
