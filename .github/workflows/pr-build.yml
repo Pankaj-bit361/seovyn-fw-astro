@@ -1,0 +1,15 @@
+# Added 2026-10-08 to test Seovyn's merge gate: the site is built on every pull request, as many real repos do, so a
+# PR that would break the build shows a failing check before anyone merges it.
+name: Build pull requests
+on:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
